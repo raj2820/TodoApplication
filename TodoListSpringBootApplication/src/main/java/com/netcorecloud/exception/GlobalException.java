@@ -55,7 +55,7 @@ return new ResponseEntity<>(err,HttpStatus.BAD_REQUEST);
 	 
  }
  
- //member class exception handler
+ //ToDoList class exception handler
  @ExceptionHandler(ToDoListException.class)
 	public ResponseEntity<MyErrorDetails> myMemberExpHandler(ToDoListException ie , WebRequest rq){
 		
