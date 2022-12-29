@@ -1,0 +1,52 @@
+#addButton{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#addForm{
+    /* position: absolute;
+    z-index: 999;
+    top: 10;
+    left: ; */
+    width: 70%;
+    margin: auto;
+padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+}
+
+#imagec img{
+    width: 100%;
+   
+
+}
+#imagec{
+    width: 300px;
+    height: 100px;
+}
+#putForm{
+    width: 70%;
+    margin: auto;
+padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+}
+
+.submit-btn{
+    border: none;
+    color: white;
+    background-color: #ed0331;
+    padding:5px 10px 5px 10px;
+    border-radius: 5px;
+}
+.submit-btn :hover{
+    opacity: 0.5;
+    background-color: #ee5574;
+}
+#status-btn{
+    color: grey;
+    border: none;
+    padding: 10px;
+}

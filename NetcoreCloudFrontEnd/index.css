@@ -1,0 +1,19 @@
+#addButton{
+    text-align: center;
+}
+
+#addForm{
+    /* position: absolute;
+    z-index: 999;
+    top: 10;
+    left: ; */
+    width: 70%;
+    margin: auto;
+padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* display: none; */
+}
+table>img{
+    width: 100%;
+}

@@ -1,6 +1,7 @@
 package com.netcorecloud.model;
 
 import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -13,6 +14,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class User {
 
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer userId;
@@ -26,7 +28,7 @@ public class User {
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "user",fetch = FetchType.EAGER)
-	private List<ToDoLists> todoLists;
+	private List<Todo> todoList;
 	
 	
 	public User() {
@@ -34,14 +36,7 @@ public class User {
 	}
 
 
-	public List<ToDoLists> getTodoLists() {
-		return todoLists;
-	}
-
-
-	public void setTodoLists(List<ToDoLists> todoLists) {
-		this.todoLists = todoLists;
-	}
+	
 
 
 	public Integer getUserId() {
@@ -84,22 +79,37 @@ public class User {
 	}
 
 
-	public User(Integer userId, String name, String email, String password, List<ToDoLists> todoLists) {
+	public User(Integer userId, String name, String email, String password, List<Todo> todoList) {
 		super();
 		this.userId = userId;
 		this.name = name;
 		this.email = email;
 		this.password = password;
-		this.todoLists = todoLists;
+		this.todoList = todoList;
 	}
+
+
+	public List<Todo> getTodoList() {
+		return todoList;
+	}
+
+
+
+
+
+	public void setTodoList(List<Todo> todoList) {
+		this.todoList = todoList;
+	}
+
+
+
 
 
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", name=" + name + ", email=" + email + ", password=" + password
-				+ ", todoLists=" + todoLists + "]";
+				+ ", todoLists=" + todoList + "]";
 	}
-	
 	
 	
 }

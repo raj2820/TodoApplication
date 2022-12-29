@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-public class TodoList {
+public class ToDoLists {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,7 +33,7 @@ public class TodoList {
 	@JsonIgnore
 	@ManyToOne(cascade = CascadeType.ALL)
 	private User user;
-	public TodoList() {
+	public ToDoLists() {
 		// TODO Auto-generated constructor stub
 	}
 	public Integer getTodoId() {
@@ -84,7 +84,7 @@ public class TodoList {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	public TodoList(Integer todoId, String image, String taskName, String todo, boolean status, LocalDate createdDate,
+	public ToDoLists(Integer todoId, String image, String taskName, String todo, boolean status, LocalDate createdDate,
 			LocalDate updatedDate, User user) {
 		super();
 		this.todoId = todoId;

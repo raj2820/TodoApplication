@@ -1,0 +1,18 @@
+/* Write all the code related to the table here  */
+table{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 40px;
+}
+th{
+    background-color: yellow;
+}
+tr:nth-child(even){
+    background-color: lightyellow;
+
+}
+tr:hover{
+    background-color: lightgrey;
+}

@@ -1,15 +1,17 @@
 package com.netcorecloud.service;
 
 import com.netcorecloud.exception.ToDoListException;
-import com.netcorecloud.model.TodoList;
+import com.netcorecloud.model.ToDoLists;
 
 public interface ToDoListService {
 
 	
-	public String addNewTask(TodoList todoList, Integer userId); 
+	public ToDoLists addNewTask(ToDoLists todoList, Integer userId); 
 	
-	public String updateTask(TodoList todoList ) throws ToDoListException ;
+	public String updateTask(ToDoLists todoList ) throws ToDoListException ;
 
 	public String updateTaskStatus(boolean status ,Integer taskId) throws ToDoListException ;
+	
+	public String deltetaskById(Integer taskId ,Integer userId)throws ToDoListException;
 	
 }

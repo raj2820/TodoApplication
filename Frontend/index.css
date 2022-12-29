@@ -1,0 +1,17 @@
+#register-form{
+
+width: 30%;
+margin: auto;
+padding: 25px;
+}
+#addForm{
+    /* position: absolute;
+    z-index: 999;
+    top: 10;
+    left: ; */
+    width: 30%;
+    margin: auto;
+padding: 20px;
+    text-align: center;
+ 
+}
