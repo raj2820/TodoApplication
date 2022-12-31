@@ -1,4 +1,12 @@
 # To-DO List application
+
+# Tech Stack 
+HTML | CSS | JavaScript | JAVA | MySQL | SpringBoot 
+
+# Description
+
+
+
 # API Root Endpoint
 https://localhost:8080/
 
