@@ -4,7 +4,7 @@
 HTML | CSS | JavaScript | JAVA | MySQL | SpringBoot 
 
 # Description
-
+To Do list application where multiple users can register them self and add To-do tasks. (Fulltsack Java application)
 
 
 # API Root Endpoint
